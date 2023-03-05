@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        robotoCondensed: ['var(--font-robotoCondensed'],
+      },
       gridTemplateColumns: {
         fluid: 'repeat(auto-fit, minmax(24rem, 1fr))',
       },

@@ -1,4 +1,11 @@
 import './globals.css'
+import { Roboto_Condensed } from 'next/font/google';
+
+const robotoCondensed = Roboto_Condensed({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-robotoCondensed',
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${robotoCondensed.className}`}>{children}</body>
     </html>
   )
 }
